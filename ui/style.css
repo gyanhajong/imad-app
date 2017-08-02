@@ -4,6 +4,9 @@ body {
     margin-top: 75px;
 }
 
+h2 {
+    font-size: 300%;
+}
 .center {
     text-align: center;
 }
