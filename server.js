@@ -16,7 +16,7 @@ var articles = {
     },
     'article-two' : {
         title: 'Article Two|Gyaniswar Hajong',
-      heading: 'Article two',
+      heading: 'Article Two',
       date: 'August 5th 2017',
       content:`  <p>
                 Hello.This is my article two.There is nothing much to say about it but it is getting fun.
