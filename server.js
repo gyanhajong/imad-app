@@ -29,6 +29,9 @@ function createTemplate(data){
             </head>
             <body>
                 <div class = "container">
+                    <div class="center">
+                        <img src="/ui/madi.png" class="img-medium"/>
+                    </div>
                     <div>
                         <a href = "/">Home</a>
                         <hr>
