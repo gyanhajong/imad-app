@@ -16,15 +16,15 @@ var articles = {
     },
     'article-two' : {
         title: 'Article Two|Gyaniswar Hajong',
-      heading: 'Article One',
+      heading: 'Article two',
       date: 'August 5th 2017',
       content:`  <p>
                 Hello.This is my article two.There is nothing much to say about it but it is getting fun.
             </p>`
     },
     'article-three' : {
-        title: 'Article Two|Gyaniswar Hajong',
-      heading: 'Article Two',
+        title: 'Article Three|Gyaniswar Hajong',
+      heading: 'Article Three',
       date: 'August 6th 2017',
       content:`  <p>
                 Hello.This is my article Three.There is nothing much to say about it but it is getting fun.
