@@ -2,4 +2,4 @@ console.log('Loaded!');
 
 var element = document.getElementById('te');
 
-element.innerHtml = 'This is the new content';
+element.innerHTML = 'This is the new content';
