@@ -1,20 +1,11 @@
-console.log('Loaded!');
-
-var element = document.getElementById('te');
-
-element.innerHTML = 'This is the new content';
-
-//Move the Image
-
-var img = document.getElementById('madi');
-
-var marginLeft = 0;
-
-function moveRight(){
-    marginLeft = marginLeft + 10;
-    img.style.marginLeft = marginLeft + 'px';
-}
-
-img.onclick = function(){
-    var interval = setInterval(moveRight,10);
+var button = document.getElementById('counter');
+button.onclick = function(){
+    //Make a request to a counter endpoint
+    
+    //Captures the request and store it in a variable
+    
+    //Render the variable in the correct span
+    counter = counter + 1;
+    var span = document.getElementById('span');
+    span.innerHTML = counter.toString();
 };
