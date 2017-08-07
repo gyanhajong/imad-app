@@ -47,13 +47,15 @@ submit.onclick = function(){
     request.open('GET','http://hazgyan.imad.hasura-app.io/submit-name?name='+name,true);
     request.send(null);
 };
-
+var s = [];
+var nameInput = document.getElementById('comment');
 var post = document.getElementById('post_btn');
 post.onclick = function(){
-    var nameInput = document.getElementById('comment');
-    var s = nameInput.value;
+    s += nameInput.value;
     var list = '';
-    list += '<li>'+s+'</li>'
+    for(var i = 0; i < s.length; ++i){
+        list += '<li>'+names[i]+'</li>';
+    }
     var ul = document.getElementById('feedback');
     ul.innerHTML = list;
 };
