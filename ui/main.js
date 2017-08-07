@@ -51,10 +51,10 @@ var s = [];
 var nameInput = document.getElementById('comment');
 var post = document.getElementById('post_btn');
 post.onclick = function(){
-    s += nameInput.value;
+    s[s.length]= nameInput.value;
     var list = '';
     for(var i = 0; i < s.length; ++i){
-        list += '<li>'+names[i]+'</li>';
+        list += '<li>'+s[i]+'</li>';
     }
     var ul = document.getElementById('feedback');
     ul.innerHTML = list;
