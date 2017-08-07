@@ -57,7 +57,7 @@ post.onclick = function(){
             if(request.status == 200){
                 var comment = request.responseText;
                 comment = JSON.parse(comment);
-                comment = '<li>'+name+'<li>';
+                list = '<li>'+comment+'<li>';
                 var ul = document.getElementById('feedback');
                 ul.innerHTML = list;
             }
