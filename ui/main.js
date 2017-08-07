@@ -50,22 +50,10 @@ submit.onclick = function(){
 
 var post = document.getElementById('post_btn');
 post.onclick = function(){
-    var request = new XMLHttpRequest();
-    //Captures the request and store it in a variable
-    request.onreadystatechange = function(){
-        if(request.readyState === XMLHttpRequest.DONE){
-            if(request.status == 200){
-                var comment = request.responseText;
-                comment = JSON.parse(comment);
-                list += '<li>'+comment+'<li>';
-                var ul = document.getElementById('feedback');
-                ul.innerHTML = list;
-            }
-           
-        }
-    };
     var nameInput = document.getElementById('comment');
     var s = nameInput.value;
-    request.open('GET','http://hazgyan.imad.hasura-app.io/feedback?comment='+s,true);
-    request.send(null);
+    var list = '';
+    list += '<li>'+s+'</li>'
+    var ul = document.getElementById('feedback');
+    ul.innerHTML = list;
 };
