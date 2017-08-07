@@ -85,6 +85,12 @@ app.get('/submit-name',function(req,res){
     names.push(name);
     res.send(JSON.stringify(names));
 });
+var names = "";
+app.get('/feedback',function(req,res){
+    var name = req.query.name;
+    names.push(name);
+    res.send(JSON.stringify(names));
+});
 
 app.get('/:articleName',function (req, res) {
    var articleName = req.params.articleName;
