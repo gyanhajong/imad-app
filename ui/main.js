@@ -54,7 +54,7 @@ post.onclick = function(){
     s[s.length]= nameInput.value;
     var list = '';
     for(var i = 0; i < s.length; ++i){
-        list += '<li>'+s[i]+'</li>';
+        list += '<hr><li>'+s[i]+'<br></li>';
     }
     var ul = document.getElementById('feedback');
     ul.innerHTML = list;
