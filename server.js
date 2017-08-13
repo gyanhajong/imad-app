@@ -58,7 +58,7 @@ function createTemplate(data){
                         <img src="/ui/madi.png" class="img-medium"/>
                     </div>
                     <div>
-                        <a href = "/">res.send(createTemplate(articleData))>Home</a>
+                        <a href = "/">Home</a>
                         <hr>
                    </div>
                    <div>
