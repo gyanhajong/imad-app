@@ -58,7 +58,7 @@ function createTemplate(data){
                         <img src="/ui/madi.png" class="img-medium"/>
                     </div>
                     <div>
-                        <a href = "/">Home</a>
+                        <a href = "/">res.send(createTemplate(articleData));Home</a>
                         <hr>
                    </div>
                    <div>
@@ -116,7 +116,7 @@ app.get('/feedback',function(req,res){
 
 app.get('/articles/:articleName',function (req, res) {
    
-   pool.query("SELECT * FROM article WHERE title = '"+req.params.articleName,function(err,result){
+   pool.query("SELECT * FROM article WHERE title = '"+req.params.articleName+"'",function(err,result){
        if(err){
            res.status(500).send(err.toString());
        } else {
