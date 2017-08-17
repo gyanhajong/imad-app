@@ -11,7 +11,7 @@ button.onclick = function(){
                 span.innerHTML = counter.toString();
             }
         }
-    };
+};
     
     
     //Captures the request
