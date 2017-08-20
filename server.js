@@ -12,32 +12,7 @@ var config = {
 };
 app.use(morgan('combined'));
 
-var articles = {
-    'article-one' : {
-      title: 'Article One|Gyaniswar Hajong',
-      heading: 'Article One',
-      date: 'August 4th 2017',
-      content:`  <p>
-                Hello.This is my article one.There is nothing much to say about it but it is getting fun.
-            </p>`
-    },
-    'article-two' : {
-        title: 'Article Two|Gyaniswar Hajong',
-      heading: 'Article Two',
-      date: 'August 5th 2017',
-      content:`  <p>
-                Hello.This is my article two.There is nothing much to say about it but it is getting fun.
-            </p>`
-    },
-    'article-three' : {
-        title: 'Article Three|Gyaniswar Hajong',
-      heading: 'Article Three',
-      date: 'August 6th 2017',
-      content:`  <p>
-                Hello.This is my article Three.There is nothing much to say about it but it is getting fun.
-            </p>`
-    }
-};
+
 function createTemplate(data){
     var title = data.title;
     var date = data.date;
