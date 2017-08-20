@@ -76,6 +76,15 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
+function hash(input) {
+    
+}
+
+app.get('/hash/:input',function(req, res) {
+    var hashedString = hash(req.params.input);
+    res.send(hashedString);
+});
+
 var names = [];
 app.get('/submit-name',function(req,res){
     var name = req.query.name;
